@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PacMate</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="weatherstyle.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="activities.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Main Section (Intro Page) -->
+    <div id="intro-page" class="container roboto-font page" >
+        <header>
+            <div id="navbar">
+                <div class="brand">
+                    <img id="logo" src="logo.png" alt="Weather Forecast Logo"> 
+                    <div id="brand_name" class="poppins-bold">PacMate</div>
+                </div>
+                <div class="nav_elems">
+                    <div id="about1" class="abtpage">About & Contact</div>
+                </div>
+            </div>
+        </header>
+        <div id="main">
+            <div id="title" class="poppins-bold">Pack Smarter, Travel Lighter!</div>
+            <div id="subtitle">Get customized packing lists based on your activity and destination weather.</div>
+            <button class="sign poppins-bold" id="get-started">Get Started</button>
+        </div>
+    </div>
+
+<!-- Weather Page (Second Section) -->
+    <div id="titleDiv"></div>  <!-- Title container -->
+    <div id="suggestionsDiv"></div>  <!-- Suggestions container -->
+    <div id="weather-page" class="containers roboto-font page " style="display: none;">
+        <header>
+            <div id="navbar-main" class="roboto-font">
+                <div class="brand">
+                    <img id="logo" src="pacmain.png" alt="PacMate Logo"> 
+                    <div id="brand_name" class="poppins-bold">PacMate</div>
+                </div>
+                <div class="nav_elem">
+                    <div id="home" class="nav-link">Home</div>
+                    <div id="about2" class="abouts">About & Contact</div>
+                </div>
+            </div>
+        </header>
+        <div id="hero-main">
+            <div class="weather">
+                <div class="info poppins-regular">
+                    <div class="question">Planning for a perfect trip?</div>
+                    <div class="weather_suggestion">Be Sure with the Weather</div>
+                    <div id="search">
+                        <input type="text" placeholder="Enter place" id="bar">
+                        <button id="btnsearch" title="search" onclick="getWeather()">Check Weather</button>
+                    </div>
+                </div>
+                <div id="weatherinfo">
+                    <div id="hero">
+                        <div id="temp"></div>
+                        <div id="otherspecs"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="activity">
+                <form id="packingForm" class="suggestion poppins-regular">
+                    <label for="activities">Which activity would you like to do?</label>
+                    <input type="text" id="activities" placeholder="Type your activity" required>
+                    <input type="hidden" id="location" value="DefaultLocation"> <!-- Default or dynamic location -->
+                    <button type="submit" id="packbtn">Get Packing Essentials</button>
+                </form>
+                <div id="act">
+                    <div id="suggestions" class="suggestions-container">
+                    
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+
+<!-- About Page -->
+    <div id="abt"class="page" style="display: none;">
+        <header>
+            <div id="navbar-abt" class="roboto-font">
+                <div class="brand">
+                    <img id="logo" src="pacabt.png" alt="PacMate Logo"> 
+                    <div id="brand_name" class="poppins-bold">PacMate</div>
+                </div>
+                <div class="nav_elements">
+                    <div id="home1" class="nav-link">Home</div>
+                </div>
+            </div>
+        </header>
+        <div id="hero-abt" class="roboto-font">
+            <div class="devs poppins-semibold">Meet the Developers</div>
+            <div class="developers">
+                <div class="us">
+                    <div class="devimg"><img class="devimg" src="cp.jpg" alt="Chirag-Poojary"></div>
+                    <div class="info">
+                        <h1>Chirag Poojary</h1><br><h2>Btech FY</h2><br><h2>Frontend Developer<br>Database Manager<br>DevOps & Testing Team</h2>
+                    </div>
+                </div>
+                <div class="us">
+                    <div class="devimg"><img class="devimg" src="sa.jpg" alt="Shravani-Andhale"></div>
+                    <div class="info">
+                        <h1>Shravni Andhale</h1><br><h2>Btech FY</h2><br><h2>Team Leader<br>Project Presenter<br>UI Consultant</h2>
+                    </div>
+                </div>
+                <div class="us">
+                    <div class="devimg"><img class="devimg" src="ns.jpg" alt="Nikhil-Sakpal"></div>
+                    <div class="info">
+                        <h1>Nikhil Sakpal</h1><br><h2>Btech FY</h2><br><h2>Backend Developer<br>Backend Tester<br>DevOps & Testing Team</h2>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <footer id="footer-main">
+            <div class="conus poppins-bold">Connect With Us</div>
+            <div class="footer-title">
+                <div class="socials">
+                    <div class="head poppins-semibold">LinkedIn</div>
+                    <a href="https://www.linkedin.com/in/link-chirag-poojary/" target="_blank" rel="noopener" title="Chirag">Chirag</a><br>
+                    <a href="https://www.linkedin.com/in/shravni-andhale-b583b0348/" target="_blank" rel="noopener" title="Shravani">Shravni</a><br>
+                    <a href="https://www.linkedin.com/in/nikhil-sakpal-925074328/" target="_blank" rel="noopener" title="Nikhil">Nikhil</a>
+                </div>
+                <div class="socials">
+                    <div class="head poppins-semibold">Github Repository</div>
+                    <a href="https://github.com/Chirag-Poojary/PacMate" target="_blank" rel="noopener" title="Repo">PacMate</a>
+                </div> 
+            </div> 
+        </footer>
+    </div>
+    <script>async function getEventbriteEvents() {
+    const API_KEY = "YOUR_EVENTBRITE_API_KEY";  // Replace with your key
+    const location = "New York";  // Change to your desired city
+    const url = `https://www.eventbriteapi.com/v3/events/search/?location.address=${location}&token=${API_KEY}`;
+
+    try {
+        const response = await fetch(url);
+        const data = await response.json();
+
+        let eventList = document.getElementById("event-list");
+        eventList.innerHTML = "";  // Clear previous results
+
+        data.events.forEach(event => {
+            let eventItem = document.createElement("div");
+            eventItem.classList.add("event");
+            eventItem.innerHTML = `
+                <h3>${event.name.text}</h3>
+                <p>${event.start.local} - ${event.end.local}</p>
+                <a href="${event.url}" target="_blank">View Event</a>
+            `;
+            eventList.appendChild(eventItem);
+        });
+
+    } catch (error) {
+        console.error("Error fetching events:", error);
+    }
+}
+
+// Call function on page load
+window.onload = getEventbriteEvents;
+</script>
+    <script src="page.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

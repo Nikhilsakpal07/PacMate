@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="weatherstyle.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="navbar-main" class="roboto-font">
+            <div class="brand">
+                <img id="logo" src="pacmain.png" alt="PacMate Logo"> 
+                <div id="brand_name" class="poppins-bold">PacMate</div>
+            </div>
+            <div class="nav_elem">
+                <div id="home">Home</div>
+                <div id="about">About</div>
+                <div id="contact">Contact</div>
+            </div>
+        </div>
+    </header>
+    <div id="hero-main" class="roboto-font">
+        <div class="weather">
+            <div class="info poppins-regular">
+                <div class="question">Planning for a perfect trip?</div>
+                <div class="weather_suggestion">Be Sure with the Weather</div>
+                <div id="search">
+                    <input type="text" placeholder="Enter city name" id="bar">
+                    <button id="btnsearch" title="search" onclick="getWeather()">Check Weather</button>
+                </div>
+            </div>
+            <div class="weatherinfo roboto-font">
+                <div id="hero" class="roboto-font">
+                    <div id="temp" class="roboto-font">
+                                
+                    </div>
+                    <div id="otherspecs" class="roboto-font">
+                                
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="activity">
+            <div class="suggestion">Want Activity Suggestions?
+                <button id="suggest">Get Suggestion</button>
+            </div>
+            <div id="search">
+                <input type="text" placeholder="Enter the Activity" id="bar">
+                <button id="btnsearch" title="search" onclick="getWeather()">Get Packing Essentials</button>
+            </div>
+        </div>
+    </div>   
+    <script src="script.js"></script>  
+</body>
+</html>

@@ -1,0 +1,104 @@
+#activity {
+    background: linear-gradient(0deg, rgba(255, 215, 0, 0.3), rgba(255, 165, 0, 0.2)), 
+            linear-gradient(180deg, #ffae99, #ffcfab); /* Sunset gradient */
+    border-radius: 30px;
+    padding: 20px;
+    margin-top: 70px;
+    width: 70%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    color: #6b4f4f; /* Darker text for contrast */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+/* Label for the Activity Form */
+#activity label {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff; /* Dark gray for text */
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Input field */
+#activity input {
+    width: 40%;
+    margin: 20px;
+    padding: 15px 20px;
+    background-color: #ffe2cb;
+    border: none; /* Soft peach border */
+    border-radius: 10px;
+    font-size: 1.25rem;
+    color: #4a4a4a;
+    margin-bottom: 15px;
+}
+
+/* Submit Button */
+#activity button {
+    background-color: #ff5328;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);  /* Warm peach for button */
+    color: #fff;
+    border: none;
+    padding: 15px 20px;
+    font-size: 1.5rem;
+    margin: 10px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+#activity button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 14px rgba(0, 0, 0, 0.4);
+}
+#activity button:active {
+    transform: translateY(2px);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+#act{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+/* Suggestions Container */
+.suggestions-container {
+    background: transparent; 
+    border-radius: 20px;
+    padding: 20px;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+#suggestions-title{
+    display: block;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #6100a6;
+    margin-bottom: 10px;
+}
+
+.items{
+    background-color: #ff5545;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    font-size: 1.25rem;
+    color: white;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    margin: 20px;
+}

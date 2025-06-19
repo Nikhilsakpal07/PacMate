@@ -1,0 +1,127 @@
+#navbar-abt{
+    font-size: 1.75em;
+    color: rgb(107, 107, 107);
+    font-weight: bold;
+    padding: 10px;
+    background-color: #a6c1ee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.brand{
+    display: flex;
+    margin-left: 5px;
+}
+#brand_name{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 40px;
+    color: #0077B6;
+    cursor:default;
+}
+.nav_elements{
+    margin-top: 15px;
+    display: flex;
+    font-size: 1.25rem;
+    cursor: pointer;
+    color: #5b0000;
+}
+.nav_elements > * {
+    margin: 0 30px;
+}
+#hero-abt{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    background: linear-gradient(to bottom, #a6c1ee, #fbc2eb);
+}
+#home1:hover{
+    transition: all 0.2s ease;
+    transform: translateY(-5px);
+    color: #ca0000;
+}
+#home1:active{
+    color: #5b0000;
+}
+.devs{
+    font-size: 3rem;
+    color: rgb(255, 238, 206);
+}
+.developers{
+    width: 75%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.us{
+    margin: 15px;
+    height: 90%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.devimg{
+    height: 90%;
+    width: 90%;
+    border-radius: 50%;
+}
+.info{
+    margin: 10px;
+    height: 90%;
+    width: 90%;
+}
+h1{
+    text-shadow: 2px 2px 6px rgba(93, 93, 93, 0.773);
+}
+footer {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #c9e2ff; /* Semi-transparent for contrast */
+    color: rgb(88, 158, 255);
+}
+footer-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footer-title{
+    font-size: 1.5rem;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.head{
+    font-size: 1.5rem;
+    margin: 10px;
+}
+.socials{
+    margin: 20px;
+}
+.socials > *{
+    margin: 0 10px;
+}
+a{
+    text-decoration:underline;
+    color: #000c64;
+    font-size: 1.25rem;
+}
+.conus{
+    margin-top: 30px;
+    font-size: 1.75rem;
+}
+html {
+    scroll-behavior: smooth;
+  }

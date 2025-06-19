@@ -1,0 +1,211 @@
+.poppins-bold {
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+.poppins-semibold {
+    font-family: "Poppins", serif;
+    font-weight: 550;
+    font-style: normal;
+  }
+.roboto-font {
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#navbar{
+    font-size: 1.75em;
+    color: rgb(107, 107, 107);
+    font-weight: bold;
+    padding: 10px;
+    /* background-color: #c0c0c0; */
+    background-color: #FFF8E7;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.brand{
+    display: flex;
+    margin-left: 5px;
+}
+#brand_name{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 40px;
+    color: #0077B6;
+    cursor:default;
+}
+.nav_elems{
+    margin-top: 15px;
+    display: flex;
+    font-size: 1.25rem;
+    cursor: pointer;
+    color: #caa02c;
+}
+.nav_elems > * {
+    margin: 0 30px;
+}
+#about1:hover{
+    transition: all 0.2s ease;
+    transform: translateY(-5px);
+    color: #FFC107;
+}
+#about1:active{
+    color: #caa02c;
+}
+#logo{
+    height: 60px;
+}
+#main{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, #FFF8E7 10%, #EDD9A3 50%, #007F9E 100%);
+}
+#title{
+    color: #28bcad;
+    font-size: 4rem;
+    font-weight: bold;
+}
+#subtitle{
+    color: #148691;
+    margin-top: 15px;
+    font-size: 2rem;
+}
+.sign{
+    font-size: 1.75rem;
+    padding: 25px 20px;
+    border-radius: 15px;
+    border: none;
+    margin: 50px;
+    background-color: #005F73; 
+    color: #FFF8E7;
+    cursor: pointer;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3); 
+    transition: all 0.3s ease;
+}
+.sign:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 14px rgba(0, 0, 0, 0.4);
+}
+.sign:active {
+    transform: translateY(2px);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
+}
+#search{
+    padding: 50px;
+    height: 3rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#bar{
+    width: 50%;
+    padding: 15px;
+    margin: 20px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 20px;
+    background-color: #ffaed0;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3); 
+}
+#btnsearch{
+    font-size: 1.25rem;
+    font-weight: 700;
+    border: none;
+    padding: 15px 15px;
+    border-radius: 10px;
+    background-color:#ed2e54;
+    color: whitesmoke;
+    cursor: pointer;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3); 
+    transition: all 0.3s ease;
+}
+#btnsearch:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 14px rgba(0, 0, 0, 0.4);
+}
+#btnsearch:active{
+    transform: translateY(2px);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
+}
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: row;
+    width: 80%;
+    height: 30rem;
+    border-radius: 30px;
+    background: linear-gradient(to bottom, #4A90E2, #87CEEB);
+}
+#temp{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100%;
+    width: 250px;
+    margin: 10px;
+    margin-left: 20px;
+    margin-top: 20px;
+    color: whitesmoke;
+}
+#emoji{
+    margin-top: 15px;
+    font-size: 4rem;
+}
+#tempnum{
+    font-size: 4rem;
+    margin-top: 25px;
+}
+#tempunit{
+    font-size: 3rem;
+    margin-top: 40px;
+}
+#otherspecs{
+    height: 85%;
+    width: 800px;
+    padding: 20px;
+    margin-top: 50px;
+    color: whitesmoke;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+#description{
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+#name{
+    font-size: 3rem;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#feeltemp{
+    margin-bottom: 30px;
+}
+#humidity{
+    margin-bottom: 30px;
+}
+#footer{
+    background-color: #c0c0c0;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#appreciation{
+    margin-left: 10px;
+}
